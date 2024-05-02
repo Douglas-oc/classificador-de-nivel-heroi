@@ -17,13 +17,14 @@ O seguinte passo a passo é realizado utilizando o terminal do próprio VSCode, 
 - Depois é preciso adicionar todos os arquivos, ou apenas o que deseja commitar, para adicionar todos basta colocar apenas um "." 
 - Depois, crie um commit, comentando o que foi alterado no projeto entre "aspas duplas"
 - Depois é preciso renomear de master(padrão) para main(recomendado)
-- Para enviar o código para o Github/remoto, é preciso copiar o link do diretório e adicione um (.git) no final
+- Para enviar o código para o Github/remoto, é preciso copiar o link do diretório e adicione um (.git) no final 
 - Finalmente envie as alterações feitas, através do push
 ```
 git init
 git add .
 git commit -m "Projeto criado"
 git branch -M main
+git remote add origin link-repositorio-github.git
 git push -u origin main
 ```
 Ao fazer o passo a passo pela primeira vez será necessário logar no Github, depois disso será apenas necessário digitar os códigos no terminal
