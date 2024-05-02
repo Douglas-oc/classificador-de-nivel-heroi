@@ -1,44 +1,26 @@
-### CONFIGURANDO O GIT
- Primeiro é preciso configurar o git, adicionando o **nome** e o **email** que estão cadastrados
-no GitHub
-```
-git config --global user.name "nome-do-github" 
-git config --global user.email "email-do-github"
-```
-Existe um comando que "salva" sua senha, assim só é preciso digitar/logar uma vez
-```
-git config --global credential.helper store
-```
-<hr>
+# 1️⃣ Desafio Classificador de nível de Herói
 
-### CRIANDO PRIMEIRO REPOSITÓRIO E PRIMEIRO COMMIT
-O seguinte passo a passo é realizado utilizando o terminal do próprio VSCode, mas é possível fazer pelo prompt de comando do windows
-- Primeiramente é necessário iniciar um novo repositório 
-- Depois é preciso adicionar todos os arquivos, ou apenas o que deseja commitar, para adicionar todos basta colocar apenas um "." 
-- Depois, crie um commit, comentando o que foi alterado no projeto entre "aspas duplas"
-- Depois é preciso renomear de master(padrão) para main(recomendado)
-- Para enviar o código para o Github/remoto, é preciso copiar o link do diretório e adicione um (.git) no final 
-- Finalmente envie as alterações feitas, através do push
-```
-git init
-git add .
-git commit -m "Projeto criado"
-git branch -M main
-git remote add origin link-repositorio-github.git
-git push -u origin main
-```
-Ao fazer o passo a passo pela primeira vez será necessário logar no Github, depois disso será apenas necessário digitar os códigos no terminal
+**O Que deve ser utilizado**
 
-<hr>
+- Variáveis
+- Operadores
+- Laços de repetição
+- Estruturas de decisões
 
-### CLONAR REPOSITÓRIO PARA O LOCAL
-basta ir no repositório que deseja clonar -> ir em code -> copiar o código presente na parte HTTPS
+## Objetivo
 
-feito isso abre o vscode -> abra a pasta que deseja clonar o repositório -> abra o terminal e digite
+Crie uma variável para armazenar o nome e a quantidade de experiência (XP) de um herói, depois utilize uma estrutura de decisão para apresentar alguma das mensagens abaixo:
 
-```
-git clone link-copiado
-```
-obs: ao apertar botão direito do mouse no terminal, ele cola direto o link, ou qualquer coisa que você copiar
+Se XP for menor do que 1.000 = Ferro
+Se XP for entre 1.001 e 2.000 = Bronze
+Se XP for entre 2.001 e 5.000 = Prata
+Se XP for entre 5.001 e 7.000 = Ouro
+Se XP for entre 7.001 e 8.000 = Platina
+Se XP for entre 8.001 e 9.000 = Ascendente
+Se XP for entre 9.001 e 10.000= Imortal
+Se XP for maior ou igual a 10.001 = Radiante
 
-<hr>
+## Saída
+
+Ao final deve se exibir uma mensagem:
+"O Herói de nome **{nome}** está no nível de **{nivel}**"
